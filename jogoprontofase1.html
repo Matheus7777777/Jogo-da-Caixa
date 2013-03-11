@@ -1,0 +1,378 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script type="text/javascript" src="jqueryanimacao.js"></script>
+<script>
+
+var CoordenadaObjeto=11;
+var pecajogando=88;
+function movimenta(direcao){
+
+			if ((direcao==1 && CoordenadaObjeto-1!=pecajogando) && (CoordenadaObjeto!=11 && CoordenadaObjeto!=31 && CoordenadaObjeto!=51 && CoordenadaObjeto!=71 && CoordenadaObjeto!=91)){
+			$("#objeto").animate({"left": "+=-20px"}, 300); 
+			CoordenadaObjeto=CoordenadaObjeto-1;
+			} else if ((direcao==1 && CoordenadaObjeto-1==pecajogando) && (CoordenadaObjeto!=12 && CoordenadaObjeto!=32 && CoordenadaObjeto!=52 && CoordenadaObjeto!=72 && CoordenadaObjeto!=92)){
+			$("#objeto").animate({"left": "+=-20px"}, 300); 
+			CoordenadaObjeto=CoordenadaObjeto-1;
+			$("#88").animate({"left": "+=-20px"}, 300);
+			pecajogando=pecajogando-1;
+			} else 	if ((direcao==2 && CoordenadaObjeto+1!=pecajogando) && (CoordenadaObjeto!=30 && CoordenadaObjeto!=50 && CoordenadaObjeto!=70 && CoordenadaObjeto!=90 && CoordenadaObjeto!=110 && CoordenadaObjeto!=68 && CoordenadaObjeto!=89 && CoordenadaObjeto!=108)){
+			$("#objeto").animate({"left": "+=+20px"}, 300);
+			CoordenadaObjeto=CoordenadaObjeto+1; 
+			} else 	if ((direcao==2 && CoordenadaObjeto+1==pecajogando) && (CoordenadaObjeto!=29 && CoordenadaObjeto!=49 && CoordenadaObjeto!=69 && CoordenadaObjeto!=89 && CoordenadaObjeto!=109 && CoordenadaObjeto!=67 && CoordenadaObjeto!=88 && CoordenadaObjeto!=107)){
+			$("#objeto").animate({"left": "+=+20px"}, 300);
+			CoordenadaObjeto=CoordenadaObjeto+1; 
+			$("#88").animate({"left": "+=+20px"}, 300);
+			pecajogando=pecajogando+1;
+			} else 	if ((direcao==3 && CoordenadaObjeto-20!=pecajogando) && (CoordenadaObjeto!=11 && CoordenadaObjeto!=12 && CoordenadaObjeto!=13 && CoordenadaObjeto!=14 && CoordenadaObjeto!=15 && CoordenadaObjeto!=16 && CoordenadaObjeto!=17 && CoordenadaObjeto!=18 && CoordenadaObjeto!=19 && CoordenadaObjeto!=20 && CoordenadaObjeto!=21 && CoordenadaObjeto!=22 && CoordenadaObjeto!=23 && CoordenadaObjeto!=24 && CoordenadaObjeto!=25 && CoordenadaObjeto!=26 && CoordenadaObjeto!=27  && CoordenadaObjeto!=28 && CoordenadaObjeto!=29 && CoordenadaObjeto!=30 && CoordenadaObjeto!=89)){
+			$("#objeto").animate({"bottom": "+=+20px"}, 300); 
+			CoordenadaObjeto=CoordenadaObjeto-20;
+			} else 	if ((direcao==3 && CoordenadaObjeto-20==pecajogando) && (CoordenadaObjeto!=31 && CoordenadaObjeto!=32 && CoordenadaObjeto!=33 && CoordenadaObjeto!=34 && CoordenadaObjeto!=35 && CoordenadaObjeto!=36 && CoordenadaObjeto!=37 && CoordenadaObjeto!=38 && CoordenadaObjeto!=39 && CoordenadaObjeto!=40 && CoordenadaObjeto!=41 && CoordenadaObjeto!=42 && CoordenadaObjeto!=43 && CoordenadaObjeto!=44 && CoordenadaObjeto!=45 && CoordenadaObjeto!=46 && CoordenadaObjeto!=47  && CoordenadaObjeto!=48 && CoordenadaObjeto!=49 && CoordenadaObjeto!=50)){
+			$("#objeto").animate({"bottom": "+=+20px"}, 300); 
+			CoordenadaObjeto=CoordenadaObjeto-20;
+			$("#88").animate({"bottom": "+=+20px"}, 300);
+			pecajogando=pecajogando-20;
+			} else 	if ((direcao==4 && CoordenadaObjeto+20!=pecajogando) && (CoordenadaObjeto!=91 && CoordenadaObjeto!=92 && CoordenadaObjeto!=93 && CoordenadaObjeto!=94 && CoordenadaObjeto!=95 && CoordenadaObjeto!=96 && CoordenadaObjeto!=97 && CoordenadaObjeto!=98 && CoordenadaObjeto!=99 && CoordenadaObjeto!=100 && CoordenadaObjeto!=101 && CoordenadaObjeto!=102 && CoordenadaObjeto!=103 && CoordenadaObjeto!=104 && CoordenadaObjeto!=105 && CoordenadaObjeto!=106 && CoordenadaObjeto!=107  && CoordenadaObjeto!=108 && CoordenadaObjeto!=109 && CoordenadaObjeto!=110 && CoordenadaObjeto!=89 && CoordenadaObjeto!=49 && CoordenadaObjeto!=50)){
+			$("#objeto").animate({"bottom": "+=-20px"}, 300); 
+			CoordenadaObjeto=CoordenadaObjeto+20;
+			} else 	if ((direcao==4 && CoordenadaObjeto+20==pecajogando) && (CoordenadaObjeto!=71 && CoordenadaObjeto!=72 && CoordenadaObjeto!=73 && CoordenadaObjeto!=74 && CoordenadaObjeto!=75 && CoordenadaObjeto!=76 && CoordenadaObjeto!=77 && CoordenadaObjeto!=78 && CoordenadaObjeto!=79 && CoordenadaObjeto!=80 && CoordenadaObjeto!=81 && CoordenadaObjeto!=82 && CoordenadaObjeto!=83 && CoordenadaObjeto!=84 && CoordenadaObjeto!=85 && CoordenadaObjeto!=86 && CoordenadaObjeto!=87  && CoordenadaObjeto!=88 && CoordenadaObjeto!=89 && CoordenadaObjeto!=90 && CoordenadaObjeto!=29 && CoordenadaObjeto!=30)){
+			$("#objeto").animate({"bottom": "+=-20px"}, 300); 
+			CoordenadaObjeto=CoordenadaObjeto+20;
+			$("#88").animate({"bottom": "+=-20px"}, 300);
+			pecajogando=pecajogando+20;
+			}
+
+}
+
+var contavariavel=1;
+function ajustacorpo(corpohumano){
+	if (corpohumano==1 && contavariavel==1){
+	$("#corpo").animate({"left": "+=+11px"}, 20);
+	contavariavel=2;
+	} else if (corpohumano==2 && contavariavel==2){
+	$("#corpo").animate({"left": "+=-11px"}, 20);
+	contavariavel=1;
+	}
+}
+var contavariavel1=1;
+function ajustacabeca(cabeca){
+	if (cabeca==1 && contavariavel1==1){
+	$("#cabeca").animate({"left": "+=+21px"}, 20);
+	contavariavel1=2;
+	} else if (cabeca==2 && contavariavel==2){
+	$("#cabeca").animate({"left": "+=-21px"}, 20);
+	contavariavel1=1;
+	}
+}
+
+function venceu(){
+	if (pecajogando==89){
+if (confirm("Parabéns, você venceu! Agora vem a Fase 02!")) {
+ location.href ="jogoprontofase2.html";
+	} else{}
+	
+	}
+	
+}
+var contandopassos=1;
+function anda(){
+	if (contandopassos%2==0){
+$("#pedireito").animate({"left": "+=-3px"}, 300);	
+$("#peesquerdo").animate({"left": "+=+6px"}, 300);	
+contandopassos=contandopassos+1;
+	} else{$("#pedireito").animate({"left": "+=+3px"}, 300);	
+$("#peesquerdo").animate({"left": "+=-6px"}, 300);contandopassos=contandopassos+1;}
+}
+
+document.onkeyup = function(e){
+   alert(e.which);
+} 
+document.onkeyup = function(e){
+var teclas = new Array(8,9,13,16,17,18,19,20,27,32,33,34,35,36,37,38,39,40,45,46,48,49,50,51,52,53,54,55,56,57,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,
+80,81,82,83,84,85,86,87,88,89,90,91,92,93,96,97,98,99,100,101,102,103,104,105,106,107,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,
+144,145,186,187,188,189,190,191,192,219,220,221,222);
+    for(tecla in teclas){
+            if(e.which == teclas[tecla]){                      
+						if (teclas[tecla]==37){
+							movimenta(1);
+							anda();ajustacabeca(1); ajustacorpo(1);
+						} else if (teclas[tecla]==39){
+							movimenta(2);venceu();
+							anda();ajustacabeca(2); ajustacorpo(2);
+						} else if (teclas[tecla]==38){
+							movimenta(3);
+							anda();ajustacabeca(3); ajustacorpo(3);
+						} else if (teclas[tecla]==40){
+							movimenta(4);
+							anda();ajustacabeca(4); ajustacorpo(4);
+						}
+            }              
+        }
+}
+
+
+
+</script>
+<style>
+#tudo{width:400px; height:100px; position:relative;}
+.borda{width:400px; height:100px; position:absolute; border:solid 1px #000000;}
+.quadrado{width:20px; height:20px; position:relative; float:left;}
+.botao{width:20px; height:20px; background:#333; color:#FFF; text-align:center; cursor:pointer;}
+#manipula{margin-top:20px; width:42px; height:60px;}
+
+
+</style>
+</head>
+
+<body>
+<div class="borda"></div>
+<div id="tudo">
+
+<!-- 
+Linha 1
+!-->
+<div id="11" class="quadrado">
+</div>
+<div id="12" class="quadrado">
+</div>
+<div id="13" class="quadrado">
+</div>
+<div id="14" class="quadrado">
+</div>
+<div id="15" class="quadrado">
+</div>
+<div id="16" class="quadrado">
+</div>
+<div id="17" class="quadrado">
+</div>
+<div id="18" class="quadrado">
+</div>
+<div id="19" class="quadrado">
+</div>
+<div id="20" class="quadrado">
+</div>
+<div id="21" class="quadrado">
+</div>
+<div id="22" class="quadrado">
+</div>
+<div id="23" class="quadrado">
+</div>
+<div id="24" class="quadrado">
+</div>
+<div id="25" class="quadrado">
+</div>
+<div id="26" class="quadrado">
+</div>
+<div id="27" class="quadrado">
+</div>
+<div id="28" class="quadrado">
+</div>
+<div id="29" class="quadrado">
+</div>
+<div id="30" class="quadrado">
+</div>
+
+
+
+<!-- 
+Linha 2
+!-->
+<div id="31" class="quadrado">
+</div>
+<div id="32" class="quadrado">
+</div>
+<div id="33" class="quadrado">
+</div>
+<div id="34" class="quadrado">
+</div>
+<div id="35" class="quadrado">
+</div>
+<div id="36" class="quadrado">
+</div>
+<div id="37" class="quadrado">
+</div>
+<div id="38" class="quadrado">
+</div>
+<div id="39" class="quadrado">
+</div>
+<div id="40" class="quadrado">
+</div>
+<div id="41" class="quadrado">
+</div>
+<div id="42" class="quadrado">
+</div>
+<div id="43" class="quadrado">
+</div>
+<div id="44" class="quadrado">
+</div>
+<div id="45" class="quadrado">
+</div>
+<div id="46" class="quadrado">
+</div>
+<div id="47" class="quadrado">
+</div>
+<div id="48" class="quadrado">
+</div>
+<div id="49" class="quadrado">
+</div>
+<div id="50" class="quadrado">
+</div>
+
+<!-- 
+Linha 3
+!-->
+<div id="51" class="quadrado">
+</div>
+<div id="52" class="quadrado">
+</div>
+<div id="53" class="quadrado">
+</div>
+<div id="54" class="quadrado">
+</div>
+<div id="55" class="quadrado">
+</div>
+<div id="56" class="quadrado">
+</div>
+<div id="57" class="quadrado">
+</div>
+<div id="58" class="quadrado">
+</div>
+<div id="59" class="quadrado">
+</div>
+<div id="60" class="quadrado">
+</div>
+<div id="61" class="quadrado">
+</div>
+<div id="62" class="quadrado">
+</div>
+<div id="63" class="quadrado">
+</div>
+<div id="64" class="quadrado">
+</div>
+<div id="65" class="quadrado">
+</div>
+<div id="66" class="quadrado">
+</div>
+<div id="67" class="quadrado">
+</div>
+<div id="68" class="quadrado">
+</div>
+<div id="69" class="quadrado" style="background:#666;">
+</div>
+<div id="70" class="quadrado" style="background:#666;">
+</div>
+
+
+
+<!-- 
+Linha 4
+!-->
+<div id="71" class="quadrado">
+</div>
+<div id="72" class="quadrado">
+</div>
+<div id="73" class="quadrado">
+</div>
+<div id="74" class="quadrado">
+</div>
+<div id="75" class="quadrado">
+</div>
+<div id="76" class="quadrado">
+</div>
+<div id="77" class="quadrado">
+</div>
+<div id="78" class="quadrado">
+</div>
+<div id="79" class="quadrado">
+</div>
+<div id="80" class="quadrado">
+</div>
+<div id="81" class="quadrado">
+</div>
+<div id="82" class="quadrado">
+</div>
+<div id="83" class="quadrado">
+</div>
+<div id="84" class="quadrado">
+</div>
+<div id="85" class="quadrado">
+</div>
+<div id="86" class="quadrado">
+</div>
+<div id="87" class="quadrado">
+</div>
+<div id="88" class="quadrado" style="background:#099;"></div>
+<div id="89" class="quadrado"><div style="position:absolute; font-size:10px;">fim</div>
+</div>
+<div id="90" class="quadrado" style="background:#666;">
+</div>
+
+<!-- 
+Linha 5
+!-->
+<div id="91" class="quadrado">
+</div>
+<div id="92" class="quadrado">
+</div>
+<div id="93" class="quadrado">
+</div>
+<div id="94" class="quadrado">
+</div>
+<div id="95" class="quadrado">
+</div>
+<div id="96" class="quadrado">
+</div>
+<div id="97" class="quadrado">
+</div>
+<div id="98" class="quadrado">
+</div>
+<div id="99" class="quadrado">
+</div>
+<div id="100" class="quadrado">
+</div>
+<div id="101" class="quadrado">
+</div>
+<div id="102" class="quadrado">
+</div>
+<div id="103" class="quadrado">
+</div>
+<div id="104" class="quadrado">
+</div>
+<div id="105" class="quadrado">
+</div>
+<div id="106" class="quadrado">
+</div>
+<div id="107" class="quadrado">
+</div>
+<div id="108" class="quadrado">
+</div>
+<div id="109" class="quadrado" style="background:#666;">
+</div>
+<div id="110" class="quadrado" style="background:#666;">
+</div>
+
+<div id="objeto" class="quadrado" style="position:absolute !important;">
+<div id="peesquerdo" style="width:9px; height:8px; position:absolute; background:#000; top:2px; left:9px; z-index:1;"></div>
+<div id="pedireito" style="width:9px; height:8px; left:6px; position:absolute; background:#000; top:11px; z-index:1;"></div>
+<div id="corpo" style="width:9px; height:19px; background:#09F; top:1px; left:1px; position:absolute; z-index:3;"></div>
+<div id="cabeca" style="width:11px; height:11px; background:#F90; border-radius:10px; top:4px; left:-5px; position:absolute; z-index:3;"></div>
+</div>
+
+
+</div>
+<div style="width:450px;">
+<div style="float: right;">Encaixe a peça aqui!</div>
+</div>
+<div id="manipula">
+<div id="cima" onclick="movimenta(3);" class="botao" style="position:relative;left:50%; margin-left:-10px; margin-bottom:2px;">▲</div>
+
+<div id="esquerda" onclick="movimenta(1); anda();ajustacabeca(1); ajustacorpo(1);" class="botao" style="margin-right:2px; float:left;"> ◄ </div><div id="direita" onclick="movimenta(2); ajustacabeca(2); ajustacorpo(2); venceu(); anda();" class="botao" style="float:left;"> ► </div>
+<div style="clear:both"></div>
+
+<div id="cima" onclick="movimenta(4);" class="botao" style="position:relative;left:50%; margin-left:-10px; margin-top:2px;">▼</div>
+
+</div>
+</body>
+</html>
